@@ -10,16 +10,33 @@ output "aws_Prod-pub-sub1_cidr" {
     value = aws_subnet.Prod-pub-sub1.cidr_block
 }
 
+output "aws_Prod-pub-sub1_subnet_id" {
+    value = aws_subnet.Prod-pub-sub1.id
+  
+}
+
 output "aws_Prod-pub-sub2_cidr" {
     value = aws_subnet.Prod-pub-sub2.cidr_block
+}
+
+output "aws_Prod-pub-sub2_subnet_id" {
+    value = aws_subnet.Prod-pub-sub2.id
 }
 
 output "aws_Prod-priv-sub1_cidr" {
     value = aws_subnet.Prod-priv-sub1.cidr_block
 }
 
+output "aws_Prod-priv-sub1_subnet_id" {
+    value = aws_subnet.Prod-priv-sub1.id
+}
+
 output "aws_Prod-priv-sub2_cidr" {
     value = aws_subnet.Prod-priv-sub2.cidr_block
+}
+
+output "aws_Prod-priv-sub2_subnet_id" {
+    value = aws_subnet.Prod-priv-sub2.id
 }
 
 output "aws_Prod-pub_route_table" {
